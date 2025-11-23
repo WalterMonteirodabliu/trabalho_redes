@@ -4,7 +4,24 @@ import mysql.connector, uuid, socket, datetime, hashlib
 from config import DB_CONFIG
 
 app = Flask(__name__)
-CORS(app, supports_credentials=True)  # Permite cookies também
+
+# Configuração para cookies cross-site
+app.config["SESSION_COOKIE_SAMESITE"] = "None"
+app.config["SESSION_COOKIE_SECURE"] = True
+
+# CORS atualizado
+CORS(app,
+     supports_credentials=True,
+     origins=[
+        "https://www.meutrabalhoredes.online",
+        "https://meutrabalhoredes.online",
+        "https://front-production-2f93.up.railway.app",
+        "https://app1.up.railway.app",
+        "https://app2-production-bf42.up.railway.app",
+        "https://app3-production-7593.up.railway.app",
+        "https://api.meutrabalhoredes.online"
+     ])
+
 def get_db():
     return mysql.connector.connect(**DB_CONFIG)
 
@@ -27,11 +44,26 @@ def login():
 
     if usuario:
         session_id = str(uuid.uuid4())
-        cursor.execute("INSERT INTO sessoes (id_sessao, id_usuario, data_login, ip_servidor) VALUES (%s,%s,%s,%s)", 
-                       (session_id, usuario['id'], datetime.datetime.now(), socket.gethostname()))
+        cursor.execute(
+            "INSERT INTO sessoes (id_sessao, id_usuario, data_login, ip_servidor) VALUES (%s,%s,%s,%s)", 
+            (session_id, usuario['id'], datetime.datetime.now(), socket.gethostname())
+        )
         conn.commit()
+
         resp = make_response({"message": "Login efetuado", "nome": usuario['nome']})
-        resp.set_cookie('session_id', session_id)
+
+        # Cookie CORRIGIDO ⬇⬇⬇⬇
+        resp.set_cookie(
+            'session_id',
+            session_id,
+            httponly=True,
+            secure=True,
+            samesite='None',
+            path='/',
+            domain=".meutrabalhoredes.online"   # <<< AQUI ESTÁ A CHAVE
+            
+        )
+
         return resp
     else:
         return jsonify({"error": "Usuário ou senha incorretos"}), 401
@@ -62,4 +94,4 @@ def perfil():
         return jsonify({"error": "Sessão inválida"}), 401
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run()

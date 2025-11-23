@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import api from "./api";  // <<< usa o axios global
 import Card from "./Card";
 import Input from "./Input";
 import Button from "./Button";
@@ -10,11 +10,11 @@ export default function Login({ setUserLogged }) {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/login", { login, senha }, { withCredentials: true });
+      const res = await api.post("/login", { login, senha });
       alert(res.data.message);
-      setUserLogged(true);
+      setUserLogged(true); 
     } catch (err) {
-      alert(err.response.data.error);
+      alert(err.response?.data?.error || "Erro ao fazer login");
     }
   };
 

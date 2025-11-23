@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
+import api from "./api";
 import Card from "./Card";
 
 export default function Perfil() {
@@ -8,10 +8,10 @@ export default function Perfil() {
   useEffect(() => {
     const getPerfil = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/meu-perfil", { withCredentials: true });
+        const res = await api.get("/meu-perfil");
         setPerfil(res.data);
       } catch (err) {
-        alert(err.response.data.error);
+        alert(err.response?.data?.error || "Erro ao carregar perfil");
       }
     };
     getPerfil();
