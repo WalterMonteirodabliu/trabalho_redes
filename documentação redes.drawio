@@ -1,0 +1,108 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 OPR/123.0.0.0" version="29.1.1">
+  <diagram name="Página-1" id="mV37WynoXT8-UwOwhGV0">
+    <mxGraphModel dx="1384" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VbOENTBaknuBxuRR9x0O-16" edge="1" parent="1" source="VbOENTBaknuBxuRR9x0O-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="VbOENTBaknuBxuRR9x0O-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="396" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-29" connectable="0" parent="VbOENTBaknuBxuRR9x0O-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="(www.meutrabalhoredes.online)" vertex="1">
+          <mxGeometry relative="1" x="-0.5289" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-33" edge="1" parent="1" source="VbOENTBaknuBxuRR9x0O-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="291" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-37" connectable="0" parent="VbOENTBaknuBxuRR9x0O-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;(api.meutrabalhoredes.online)&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0458" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-1" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/DNS.svg;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="266" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-22" edge="1" parent="1" source="VbOENTBaknuBxuRR9x0O-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="VbOENTBaknuBxuRR9x0O-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="398" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-26" edge="1" parent="1" source="VbOENTBaknuBxuRR9x0O-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" target="VbOENTBaknuBxuRR9x0O-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="297.5" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-2" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/database_server.svg;" value="&lt;div&gt;DB (MySQL)&lt;/div&gt;&lt;div&gt;IP:&amp;nbsp;66.33.22.171&lt;/div&gt;&lt;div&gt;Tabelas: sessoes, usuarios&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="41" x="270.5" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-28" edge="1" parent="1" source="VbOENTBaknuBxuRR9x0O-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="VbOENTBaknuBxuRR9x0O-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="174" y="705" />
+            </Array>
+            <mxPoint x="174" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-3" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" value="&lt;div&gt;APP1&lt;/div&gt;&lt;div&gt;Backend Python&lt;/div&gt;&lt;div&gt;IP: 66.33.22.222&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-size: medium; text-align: start; text-wrap-mode: wrap;&quot;&gt;9805f39c62e9&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="28.000000000000004" x="160" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="AT4CxbTOV5b7XefD0Z0_-1" edge="1" parent="1" source="VbOENTBaknuBxuRR9x0O-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="VbOENTBaknuBxuRR9x0O-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-4" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/laptop_client.svg;" value="CLIENTE&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="45" x="266" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-5" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" value="&lt;div&gt;APP2&lt;/div&gt;&lt;div&gt;Backend Python&lt;/div&gt;&lt;div&gt;IP: 66.33.22.73&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-size: medium; text-align: start; text-wrap-mode: wrap;&quot;&gt;f9224a940f72&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="28.000000000000004" x="277" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-6" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" value="&lt;div&gt;APP3&lt;/div&gt;&lt;div&gt;Backend Python&lt;/div&gt;&lt;div&gt;IP: 66.33.22.247&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-size: medium; text-align: start; text-wrap-mode: wrap;&quot;&gt;82984d26bd98&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="28.000000000000004" x="400" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-39" edge="1" parent="1" source="VbOENTBaknuBxuRR9x0O-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="644" y="330" />
+            </Array>
+            <mxPoint x="290" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-7" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;" value="&lt;div&gt;Front (React)&lt;/div&gt;&lt;div&gt;IP: 66.33.22.56&lt;/div&gt;&lt;div&gt;&lt;div&gt;Se comunica com API via domínio:&lt;/div&gt;&lt;div&gt;https://api.meutrabalhoredes.online&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="28.000000000000004" x="630" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-34" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="VbOENTBaknuBxuRR9x0O-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="174" y="350" />
+            </Array>
+            <mxPoint x="290" y="350" as="sourcePoint" />
+            <mxPoint x="220" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-35" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="VbOENTBaknuBxuRR9x0O-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="414.5" y="350" />
+            </Array>
+            <mxPoint x="290" y="350" as="sourcePoint" />
+            <mxPoint x="414.5" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VbOENTBaknuBxuRR9x0O-36" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="VbOENTBaknuBxuRR9x0O-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="291" y="390" />
+              <mxPoint x="291" y="410" />
+            </Array>
+            <mxPoint x="291" y="340" as="sourcePoint" />
+            <mxPoint x="312" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
